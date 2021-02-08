@@ -53,21 +53,41 @@ body {
 
 
 
-#button {
+#button_run {
   background-color: #00325E;
-  border: none;
   color: white;
   padding: 20px;
   border-radius: 12px;
+  border: 2px solid white;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin-left:740px;
+  margin-left:400px;
   margin-top:15px;
   cursor: pointer;
 }
 
-#button:hover {
+#button_reset {
+  background-color: #00325E;
+  color: white;
+  padding: 20px;
+  border-radius: 12px;
+  border: 2px solid white;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-left:600px;
+  margin-top:15px;
+  cursor: pointer;
+}
+
+
+#button_run:hover {
+  background-color: grey;
+  color: white;
+}
+
+#button_reset:hover {
   background-color: grey;
   color: white;
 }

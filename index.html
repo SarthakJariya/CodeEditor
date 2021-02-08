@@ -47,8 +47,8 @@
   </main>     
 </div>    
 
-<button id="button" name="runbutton">RUN</button>
-     
+<button id="button_run" name="runbutton">RUN</button>
+<button id="button_reset" name="resetbutton" onclick="reset();">RESET</button>     
        
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
   integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
@@ -59,12 +59,18 @@
   crossorigin="anonymous"></script>
 
   <script>
-    $("#button").on("click", function(){
+    $("#button_run").on("click", function(){
       var myFrame = $("#result").contents().find('body');
       var textAreaValue = $("#htmltextarea").val();
       myFrame.html(textAreaValue);
     });
+
+   function reset(){
+document.getElementById("htmltextarea").value = "";
+$("#result").contents().find("body").html("");}
   </script>
+
+
       
 </body>
 </html>
